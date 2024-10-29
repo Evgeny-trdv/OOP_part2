@@ -11,8 +11,10 @@ public class Main {
 
         bicycle.check();
         bicycle2.check();
+        System.out.println();
         car.check();
         car2.check();
+        System.out.println();
         truck.check();
         truck2.check();
     }
