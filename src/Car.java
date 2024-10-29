@@ -12,13 +12,4 @@ public class Car extends Transport implements Service{
         System.out.println("Проверяем двигатель");
     }
 
-    @Override
-    public void check() {
-        System.out.println("Обслуживаем " + getModelName());
-        for (int i = 0; i < getWheelsCount(); i++) {
-            updateTyre();
-        }
-        checkEngine();
-    }
-
 }
