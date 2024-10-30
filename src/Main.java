@@ -9,21 +9,17 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
+        Transport[] transports = {
+                new Car("car1", 4),
+                new Car("car2", 2),
+                new Truck("truck1", 6),
+                new Truck("truck2", 8),
+                new Bicycle("bicycle1", 2),
+                new Bicycle("bicycle2", 2)
+        };
         ServiceStation station = new ServiceStation();
-        station.check(car, null, null);
-        station.check(car2, null, null);
-        System.out.println();
-        station.check(null, bicycle, null);
-        station.check(null, bicycle2, null);
-        System.out.println();
-        station.check(null, null, truck);
-        station.check(null, null, truck2);
-        System.out.println();
-        station.check(car);
-        System.out.println();
-        station.check(bicycle);
-        System.out.println();
-        station.check(truck);
+
+        station.check(transports);
 
     }
 }
